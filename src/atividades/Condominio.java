@@ -93,11 +93,12 @@ public class Condominio {
 			}
 			
 		}
-		/*
+		/*System.out.println();
 		for (int x = 0; x < 4; x++) {
 			for (int y = 0; y < 4; y++) {
 				System.out.printf("%s ", cond[x][y]);
 			}
+			System.out.println();
 		}
 		*/
 		sc.close();
