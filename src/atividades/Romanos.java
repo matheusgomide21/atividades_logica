@@ -59,6 +59,15 @@ public class Romanos {
 			anoN = sc.nextInt();
 		}
 		
+		converte(dia, mes, ano, diaN, mesN, anoN, index, romano, nome);
+		
+		sc.close();
+	}
+
+	private static void converte( int dia, int mes, int ano, int diaN, int mesN, int anoN, int index,
+			String[] romano, String nome) {
+		int idade;
+		int idade_calc;
 		idade = ano - anoN;
 		
 		if( mes < mesN || mes == mesN && dia < diaN)
@@ -109,7 +118,8 @@ public class Romanos {
 		
 		for(int i = 0; i < index; i++)
 			System.out.printf("%s", romano[i]);
-		System.out.printf(" Anos");
-		sc.close();
+		System.out.printf(" Anos");			
 	}
+	
 }
+
