@@ -15,45 +15,47 @@ public class Romanos {
 		System.out.println("Digite o seu nome completo: ");
 		nome = sc.nextLine();
 		
-		System.out.println("Informe o dia atual: ");
+		System.out.println("Informe o dia atual formato dd: ");
 		dia = sc.nextInt();
 		while(dia > 31 || dia < 0) {
-			System.out.println("Informe um dia válido! ");
+			System.out.println("Informe um dia válido! formato dd: ");
 			dia = sc.nextInt();
 		}
 		
-		System.out.println("Informe o número do mês atual: ");
+		System.out.println("Informe o número do mês atual: formato mm: ");
 		mes = sc.nextInt();
 		while(mes > 12 || mes < 0) {
-			System.out.println("Informe um mês válido! ");
+			System.out.println("Informe um mês válido! formato mm:");
 			mes = sc.nextInt();
 		}
 		
-		System.out.println("Informe o ano atual: ");
+		System.out.println("Informe o ano atual: formato aaaa: ");
 		ano = sc.nextInt();
-		while(ano < 1900) {
-			System.out.println("Informe um ano válido! ");
+		while(ano < 1800) {
+			System.out.println("Ano inferior a 1800 é inválido! Informe um ano válido! "
+					+ "formato aaaa: ");
 			ano = sc.nextInt();
 		}
 		
-		System.out.println("Informe o dia do seu aniversário: ");
+		System.out.println("Informe o dia do seu aniversário formato dd:");
 		diaN = sc.nextInt();
 		while(diaN > 31 || diaN < 0) {
-			System.out.println("Informe um dia válido! ");
+			System.out.println("Informe um dia válido! formato dd:");
 			diaN = sc.nextInt();
 		}
 		
-		System.out.println("Informe o número do mês do seu aniversário: ");
+		System.out.println("Informe o número do mês do seu aniversário formato mm:");
 		mesN = sc.nextInt();
 		while(mesN > 12 || mesN < 0) {
-			System.out.println("Informe um mês válido! ");
+			System.out.println("Informe um mês válido! formato mm:");
 			mesN = sc.nextInt();
 		}
 		
-		System.out.println("Informe o ano do seu aniversário: ");
+		System.out.println("Informe o ano do seu aniversário formato aaaa: ");
 		anoN = sc.nextInt();
-		while(anoN < 1900) {
-			System.out.println("Informe um ano válido! ");
+		while(anoN < 1800 || anoN >= ano) {
+			System.out.println("Ano inferior a 1800, superior ou igual ao ano atual"
+					+ " é inválido, insira um válido ! formato aaaa: ");
 			anoN = sc.nextInt();
 		}
 		
